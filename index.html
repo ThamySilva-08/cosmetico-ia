@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Be Vollar">
+            <span>BE VOLLAT</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav class="header-icons">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </nav>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">LANÇAMENTOS</a></li>
+            <li><a href="#">MAQUIAGEM</a></li>
+            <li><a href="#">SKIN CARE</a></li>
+            <li><a href="#">CABELO</a></li>
+            <li><a href="#">CUIDADOS CORPORAIS</a></li>
+            <li><a href="#">PERFUMES</a></li>
+            <li><a href="#">PINCÉIS</a></li>
+            <li><a href="#">COLLABS</a></li>
+            <li><a href="#">PRESENTES</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="filter-group">
+                <label for="skin-care-filter">SKIN CARE</label>
+                <select id="skin-care-filter">
+                    <option value="">Todos</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="brand-filter">MARCA</label>
+                <select id="brand-filter">
+                    <option value="">Todas</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-filter">PREÇO</label>
+                <select id="price-filter">
+                    <option value="">Qualquer</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="discount-filter">DESCONTO</label>
+                <select id="discount-filter">
+                    <option value="">Qualquer</option>
+                </select>
+            </div>
+        </aside>
+
+        <main class="product-grid">
+            <div class="product-card">
+                <img src="base.png" alt="Base Líquida Vult HD">
+                <h3>Base Líquida Vult HD Alta cobertura 26 mL</h3>
+                <p class="price">R$ 31,99</p>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="product-card">
+                <img src="blush.png" alt="Blush Dior Forever Rosy Glow">
+                <h3>Blush Dior Forever Rosy Glow 020 Mahogany</h3>
+                <p class="price">R$ 272,00</p>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="product-card">
+                <img src="perfume.png" alt="Malbec Desodorante Colônia">
+                <h3>Malbec Desodorante Colônia 50mL</h3>
+                <p class="price">R$ 123,99</p>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </main>
+    </div>
+
+    <div class="scroll-down-arrow">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</body>
+</html>

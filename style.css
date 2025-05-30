@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fbe9e7; /* Light peach/pink background */
+    border-bottom: 1px solid #f2d7d5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #ccc; /* Placeholder for actual logo styling */
+}
+
+.logo span {
+    font-weight: 700;
+    color: #555; /* Adjust color if needed */
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 400px; /* Adjust as needed */
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px 15px;
+    flex-grow: 1;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background-color: #f2d7d5; /* Slightly darker peach/pink */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #555;
+    font-size: 1rem;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons a {
+    color: #555;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.main-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 15px 0;
+    display: block;
+    font-weight: 600;
+    white-space: nowrap; /* Prevent wrapping for navigation items */
+}
+
+.main-nav ul li a:hover {
+    color: #e91e63; /* Pink for hover effect */
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar {
+    flex: 0 0 250px; /* Fixed width for sidebar */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    height: fit-content; /* Ensure sidebar doesn't extend unnecessarily */
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2069.9H5.4c-7.3%200-11%208.9-6%2014.2l140.7%20140.7c3.3%203.3%208.6%203.3%2011.9%200l140.7-140.7c5-5.3%201.3-14.2-6-14.2z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.product-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+    flex-grow: 1; /* Allow title to take up available space */
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #e91e63; /* Pink for price */
+    margin-bottom: 15px;
+}
+
+.product-card .heart-icon {
+    position: absolute;
+    bottom: 20px; /* Adjust position as needed */
+    right: 20px; /* Adjust position as needed */
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.product-card .heart-icon:hover {
+    color: #e91e63;
+}
+
+.scroll-down-arrow {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.scroll-down-arrow i {
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
